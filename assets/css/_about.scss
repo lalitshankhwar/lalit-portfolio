@@ -1,0 +1,45 @@
+.introduction{
+    min-height: 100vh;
+    .circular-image{
+        margin-top: 6.25rem;
+        box-shadow: 0 0 10px 5px rgb(255 255 255 / 20%);
+    }
+    .title{
+        .name{
+            font-family: $secondary-font;
+            font-size: 6.5rem;
+            letter-spacing: .8rem;
+        }
+        .skill{
+            font-size: 1.25rem;
+            max-width: 40rem;
+        }
+    }
+    #resume-btn{
+        background-color: $primary-color;
+    }
+    #more-btn{
+        color: $primary-color;
+        border:2px solid $primary-hover;
+        &:hover{
+            color: white;
+        }
+    }
+    #resume-btn, #more-btn{
+        width: 140px;
+        padding: 1rem 0;
+        font-family: $secondary-font;
+        font-size: 80%;
+        letter-spacing: .15rem;
+        transition: all .3s ease-in-out;
+        &:hover{
+            background-color: $primary-hover;
+        }
+    }
+}
+
+.about-section{
+    @include links($primary-color, $primary-hover);
+    padding: 8rem 0 0;
+    background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%);
+}

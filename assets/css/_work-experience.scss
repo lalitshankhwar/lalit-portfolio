@@ -1,0 +1,13 @@
+.work-section{
+    padding: 5rem 0;
+    .work{
+        padding: 5rem;
+        .work-heading{
+            @include section-heading();
+        }
+        .circular-logo{
+            height: 68px;
+            margin-bottom: 20px;
+        }
+    }
+}

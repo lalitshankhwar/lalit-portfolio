@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+header .navigation a {
+  text-decoration: none;
+  color: #fff;
+}
+header .navigation a:hover {
+  color: gainsboro;
+}
+header .navigation a {
+  font-weight: 500;
+  font-size: 20px;
+}
+header .navigation a:hover {
+  border-bottom: 2px solid #03C988;
+  color: #03C988;
+}
+header .navigation .menu ul li {
+  padding: 1.8rem 1.5rem;
+}
+header .navigation .menu.open ul {
+  height: 17.5rem;
+}
+header .navigation .menu-btn {
+  display: none;
+  background-color: transparent;
+  font-size: 0.8rem;
+  border: 1px solid #03C988;
+}
+
+header.fadebg {
+  background-color: #fff;
+}
+header.fadebg #logo {
+  color: black !important;
+}
+header.fadebg a {
+  color: black;
+}
+header.fadebg a:hover {
+  color: #03C988;
+}
+
+.introduction {
+  min-height: 100vh;
+}
+.introduction .circular-image {
+  margin-top: 6.25rem;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+}
+.introduction .title .name {
+  font-family: "Varela Round", sans-serif;
+  font-size: 6.5rem;
+  letter-spacing: 0.8rem;
+}
+.introduction .title .skill {
+  font-size: 1.25rem;
+  max-width: 40rem;
+}
+.introduction #resume-btn {
+  background-color: #03C988;
+}
+.introduction #more-btn {
+  color: #03C988;
+  border: 2px solid #039f6b;
+}
+.introduction #more-btn:hover {
+  color: white;
+}
+.introduction #resume-btn, .introduction #more-btn {
+  width: 140px;
+  padding: 1rem 0;
+  font-family: "Varela Round", sans-serif;
+  font-size: 80%;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s ease-in-out;
+}
+.introduction #resume-btn:hover, .introduction #more-btn:hover {
+  background-color: #039f6b;
+}
+
+.about-section {
+  padding: 8rem 0 0;
+  background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}
+.about-section a {
+  text-decoration: none;
+  color: #03C988;
+}
+.about-section a:hover {
+  color: #039f6b;
+}
+
+.skill-section {
+  padding: 7.5rem 0;
+}
+.skill-section .skill-heading {
+  letter-spacing: 1px;
+  padding: 0 20px 48px 20px;
+}
+.skill-section .skill-heading a {
+  text-decoration: none;
+  color: #03C988;
+}
+.skill-section .skill-heading a:hover {
+  color: #039f6b;
+}
+.skill-section .skill-heading h2 {
+  padding-left: 2rem;
+  border-left: 8px solid #03C988;
+}
+.skill-section .skill-container {
+  padding: 2rem 0.5rem;
+}
+.skill-section .skill-container .single-skill {
+  flex-basis: 150px;
+}
+.skill-section .skill-container .single-skill img {
+  width: 40px;
+}
+
+@media (max-width: 991px) {
+  header {
+    background-color: #fff;
+  }
+  header .navigation a {
+    color: #161616;
+  }
+  header .navigation #logo {
+    color: black !important;
+  }
+  header .navigation .menu ul {
+    transition: all 0.5s ease-in-out;
+    background-color: #fff !important;
+    position: absolute;
+    top: 65px;
+    z-index: -1;
+    height: 0;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  header .navigation .menu ul li {
+    padding: 0.8rem 0;
+  }
+  header .navigation .menu-btn {
+    display: block;
+  }
+  .introduction .circular-image {
+    margin-top: 15rem;
+  }
+  .introduction .title .name {
+    font-size: 4rem;
+  }
+  .introduction .title .skill {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .work-section .work .company, .work-section .work .job-role, .work-section .work .time-period {
+    text-align: center;
+  }
+  .project-section .project-text {
+    padding: 3rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .introduction .title .name {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 591px) {
+  .work-section .work {
+    padding: 5rem 3rem !important;
+  }
+  .project-section .project-text {
+    padding: 1.5rem !important;
+  }
+}
+@media (max-width: 360px) {
+  .work-section .work {
+    padding: 5rem 2rem !important;
+  }
+  .work-section .work .work-heading h2 {
+    text-align: center;
+    padding-left: 0 !important;
+    border-left: none !important;
+  }
+  .work-section .work .work-heading p {
+    text-align: center;
+  }
+  .project-section .project-text h4 {
+    font-size: 1.2rem;
+  }
+  .project-section .project-text p {
+    font-size: 0.88rem;
+  }
+}
+.work-section {
+  padding: 5rem 0;
+}
+.work-section .work {
+  padding: 5rem;
+}
+.work-section .work .work-heading {
+  letter-spacing: 1px;
+}
+.work-section .work .work-heading a {
+  text-decoration: none;
+  color: #03C988;
+}
+.work-section .work .work-heading a:hover {
+  color: #039f6b;
+}
+.work-section .work .work-heading h2 {
+  padding-left: 2rem;
+  border-left: 8px solid #03C988;
+}
+.work-section .work .circular-logo {
+  height: 68px;
+  margin-bottom: 20px;
+}
+
+.project-section {
+  padding: 7.5rem 0;
+}
+.project-section .project-heading {
+  letter-spacing: 1px;
+  padding: 0 20px 48px 20px;
+}
+.project-section .project-heading a {
+  text-decoration: none;
+  color: #03C988;
+}
+.project-section .project-heading a:hover {
+  color: #039f6b;
+}
+.project-section .project-heading h2 {
+  padding-left: 2rem;
+  border-left: 8px solid #03C988;
+}
+.project-section .project-text {
+  padding: 5rem;
+}
+.project-section .project-text .btn {
+  font-size: 80%;
+  color: #03C988;
+  font-family: "Varela Round", sans-serif;
+  border: 1px solid #03C988;
+  transition: all 300ms ease-in;
+}
+.project-section .project-text .btn:hover {
+  background-color: #03C988;
+  color: white;
+}
+
+.contact-section {
+  padding: 7.5rem 0 4rem;
+}
+.contact-section .card {
+  border-bottom: 0.25rem solid #03C988;
+}
+.contact-section .card .card-body a {
+  text-decoration: none;
+  color: #03C988;
+}
+.contact-section .card .card-body a:hover {
+  color: #039f6b;
+}
+.contact-section .card .card-body i {
+  color: #03C988;
+}
+.contact-section .card .card-body span {
+  font-family: "Varela Round", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  border-bottom: 0.25rem solid #03C988;
+}
+.contact-section .card .card-body .social a i {
+  margin: 0 0.5rem;
+  font-size: 2rem;
+}
+
+body {
+  font-family: "Nunito" !important;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.bg-grey {
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url(../image/bg-masthead.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lalit Kumar - Front-End Developer | lifelong learner">
+    <meta name="author" content="Lalit Kumar">
+    <meta name="keywords" content="Front-end developer, web developer, ui developer">
+    <meta name="google-site-verification" content="GpbcCMUzdU4zKmd1j_sC3ZdvGwLHk_lYK6SNxsheEjE" />
+    <title>Lalit Kumar - UI Developer | LifeLong learner</title>
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Bootstrap core css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet">
+    <!-- adding a favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- This div is for background image -->
+    <div class="bg-grey">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="navigation d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <div id="logo" class="fs-3 text-white fw-bold">Lalit Kumar</div>
+                    </div>
+                    <div class="menu">
+                        <ul class="list-unstyled d-flex align-items-center mb-0">
+                            <li><a href="#aboutme">About Me</a></li>
+                            <li><a href="#skill">Skills</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#project">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <!-- <li><a href="lalitkumar.pdf" class="resume-btn rounded-3 p-1">Resume</a></li> -->
+                        </ul>
+                    </div>
+                    <button class="menu-btn rounded-1 p-2 my-3">Menu
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- Intro -->
+        <div class="introduction text-center">
+            <img src="assets/image/circular-image.jpg" class="circular-image rounded-circle" height="200" width="200"
+                alt="Lalit Kumar">
+            <div class="title mt-4 text-center">
+                <h1 class="name mb-0 text-uppercase text-white">Lalit Kumar</h1>
+                <h2 class="skill text-white-50 mb-5 mt-2 mx-auto">Front-End Developer | Lifelong Learner | Experienced Gamer</h2>
+                <div class="d-flex gap-2 justify-content-center flex-wrap">
+                    <a id="resume-btn" class="btn rounded-5 text-uppercase text-white" onclick="window.open('./assets/lalitkumar.pdf')">Resume</a>
+                    <a id="more-btn" class="btn rounded-5 text-uppercase" onclick="location.href ='#contact'">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About section -->
+    <section class="about-section" id="aboutme">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 text-center mx-auto">
+                    <h2 class="text-white mb-4">Hey👋, I'm Lalit Kumar, I have earned my <a href="#" style="pointer-events: none">Diploma in Computer Engineering</a>
+                        degree and currently pursuing <a href="#" style="pointer-events: none">B.Sc.</a></h2>
+                    <p class="text-white-50 mb-5">Aspiring Front-end Web Develpoper. I'm interested in building web apps and skilled in HTML/CSS, SCSS, JavaScript, JS-Dom, JQuery, Bootstrap, Responsive Web design.
+                        Also I'm familiar with Tailwind CSS, Php, MySQL, WordPress, Shopify.
+                        Simultaneously I'm learning ReactJS.
+                        <br>
+                        <br>
+                        I have previous experience both in industry as well as in research roles. For example, I've
+                        previously worked at Escade Technologies as a front-end web developer intern and at Oasis Infobyte as a web development intern.
+                        <br>
+                        <br>
+                        Please see my <a href="./assets/lalitkumar.pdf" target="_blank">resume</a> (or continue scrolling down here) if you want
+                        to learn more
+                        about my past positions.
+                        <br>
+                        <br>
+                        Above all, I'm a meticulous learner, good at problem-solving, passionate about altruistic causes using technology and stay updated with the latest industry trends.
+                        <br>
+                        <br>
+                        In my free time, I enjoy reading books, traveling, puzzle hunting, and playing video games :)
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Section  -->
+    <section class="skill-section bg-light" id="skill">
+        <div class="container">
+            <!-- Section Main heading  -->
+            <div class="skill-heading">
+                <h2 class="text-black">Skills</h2>
+            </div>
+            <div class="skill-container d-flex flex-wrap gap-4 justify-content-center bg-black"><!-- this div hides the weird white space between project on mobile -->
+                <div class="single-skill text-center rounded-3">
+                    <img src="assets/image/html.png" alt="HTML">
+                    <h4 class="text-white mt-2 mb-0">HTML</h4>
+                    <p class="text-white-50 m-0">Experienced</p>
+                </div>
+                <div class="single-skill text-center rounded-3">
+                    <img src="assets/image/css-3.png" alt="CSS">
+                    <h4 class="text-white mt-2 mb-0">CSS</h4>
+                    <p class="text-white-50 m-0">Experienced</p>
+                </div>
+                <div class="single-skill text-center rounded-3">
+                    <img src="assets/image/js.png" alt="JavaScript">
+                    <h4 class="text-white mt-2 mb-0">JavaScript</h4>
+                    <p class="text-white-50 m-0">Experienced</p>
+                </div>
+                <div class="single-skill text-center rounded-3">
+                    <img src="assets/image/sass.png" alt="SASS">
+                    <h4 class="text-white mt-2 mb-0">SASS</h4>
+                    <p class="text-white-50 m-0">Intermediate</p>
+                </div>
+                <div class="single-skill text-center rounded-3">
+                    <img src="assets/image/bootstrap.png" alt="Bootstrap">
+                    <h4 class="text-white mt-2 mb-0">Bootstrap</h4>
+                    <p class="text-white-50 m-0">Experienced</p>
+                </div>
+                <div class="single-skill text-center rounded-3">
+                    <img src="assets/image/git.png" alt="Git">
+                    <h4 class="text-white mt-2 mb-0">Git</h4>
+                    <p class="text-white-50 m-0">Intermediate</p>
+                </div>
+                <div class="single-skill text-center rounded-3">
+                    <img src="assets/image/mysql.png" alt="MySQL">
+                    <h4 class="text-white mt-2 mb-0">MySQL</h4>
+                    <p class="text-white-50 m-0">Beginner</p>
+                </div>
+                <div class="single-skill text-center rounded-3">
+                    <img src="assets/image/php.png" alt="PHP">
+                    <h4 class="text-white mt-2 mb-0">PHP</h4>
+                    <p class="text-white-50 m-0">Beginner</p>
+                </div>
+                <div class="single-skill text-center rounded-3">
+                    <img src="assets/image/wordpress.png" alt="Wordpress">
+                    <h4 class="text-white mt-2 mb-0">Wordpress</h4>
+                    <p class="text-white-50 m-0">Beginner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section  -->
+    <section class="work-section bg-light" id="work">
+        <div class="container">
+            <div class="work bg-black">
+                <!-- Section main headin  -->
+                <div class="work-heading pb-5">
+                    <h2 class="text-white">Selected Work Experience</h2>
+                    <br>
+                    <p class="text-white-50">Please see my <a target="_blank"
+                            href="https://www.linkedin.com/in/lalitshankhwar">LinkedIn</a> for the complete list of my
+                        past work
+                        experiences.</p>
+                </div>
+                <!-- Oasis Infobyte  -->
+                <div class="row ">
+                    <div class="col-lg-2 text-center">
+                        <img src="assets/image/work-2.jpg" class="circular-logo rounded-circle" alt="Oasis Infobyte">
+                    </div>
+                    <div class="col-lg-10 text-white pb-5">
+                        <h4 class="company">Oasis Infobyte</h4>
+                        <h5 class="job-role mb-0">Web Development Intern</h5>
+                        <p class="time-period">May 2023 - June 2023</p>
+                        <ul class="text-white-50 p-0">
+                            <li>
+                                Developed webapps/webpages using HTML, CSS and JavaScript.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Escade technologies -->
+                <div class="row ">
+                    <div class="col-lg-2 text-center">
+                        <img src="assets/image/work-1.png" class="circular-logo rounded-circle" alt="Escade Technologies">
+                    </div>
+                    <div class="col-lg-10 text-white pb-5">
+                        <h4 class="company">Escade Technologies</h4>
+                        <h5 class="job-role mb-0">Front-End Developer Intern</h5>
+                        <p class="time-period">April 2022 - September 2022</p>
+                        <ul class="text-white-50 p-0">
+                            <li>Using HTML, JavaScript, and CSS to bring concepts to life.</li>
+                            <li>Developing and maintaining the user interface.</li>
+                            <li>Implementing design on mobile websites.</li>
+                            <li>Managing software workflow.</li>
+                            <li>Fixing bugs and testing for usability.</li>
+                            <li>Ensuring web design is optimized for smartphones.</li>
+                            <li>Turn UI/UX designs into prototypes, creating excellent interactions from designs</li>
+                            <li>
+                                Design new features, or maintain old features.
+                                <br>
+                                <br>
+                                <b>Skills:</b>
+                                SCSS · HTML5 · CSS · PSD to HTML · Bootstrap · JavaScript ·
+                                jQuery · Semantic HTML · Responsive Web Design · 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Section  -->
+    <section class="project-section bg-light" id="project">
+        <div class="container">
+            <!-- Section Main heading  -->
+            <div class="project-heading">
+                <h2 class="text-black">Projects</h2>
+                <br>
+                <p class="text-black-50">Below are some of the projects I've worked on for fun :).</p>
+            </div>
+            <div class="bg-black"><!-- this div hides the weird white space between project on mobile -->
+                <!-- Weather App-->
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <img src="assets/image/project-8.PNG" class="img-fluid h-100" alt="Weather App">
+                    </div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="project-text text-lg-end text-center">
+                            <h4 class="text-white">Weather App</h4>
+                            <p class="text-white-50">Simple Weather App which uses Openweathermap API (JS)</p>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://github.com/lalitshankhwar/weatherApp-js')">Github</button>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://lalitshankhwar.github.io/weatherApp-js/')">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Joke Generator-->
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <img src="assets/image/project-7.PNG" class="img-fluid h-100" alt="Joke Generator">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="project-text text-lg-start text-center">
+                            <h4 class="text-white">Random Joke Generator</h4>
+                            <p class="text-white-50">Simple Joke generator that fetches jokes from API icanhazdadjoke.com.</p>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://github.com/lalitshankhwar/joke-generator')">Github</button>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://lalitshankhwar.github.io/joke-generator/')">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Alarm clock-->
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <img src="assets/image/project-6.PNG" class="img-fluid h-100" alt="Alarm Clock">
+                    </div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="project-text text-lg-end text-center">
+                            <h4 class="text-white">Alarm Clock</h4>
+                            <p class="text-white-50">Javascript</p>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://github.com/lalitshankhwar/alarm-clock')">Github</button>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://lalitshankhwar.github.io/alarm-clock/')">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- TODO App-->
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <img src="assets/image/project-5.png" class="img-fluid h-100" alt="TODO App">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="project-text text-lg-start text-center">
+                            <h4 class="text-white">TODO App</h4>
+                            <p class="text-white-50">Basic TODO App (JavaScript)</p>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://github.com/lalitshankhwar/todo-App-js')">Github</button>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://lalitshankhwar.github.io/todo-App-js/')">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dice Game-->
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <img src="assets/image/project-4.PNG" class="img-fluid h-100" alt="Dice Game">
+                    </div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="project-text text-lg-end text-center">
+                            <h4 class="text-white">Dice Game</h4>
+                            <p class="text-white-50">It's a 2 player game (JavaScript)</p>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://github.com/lalitshankhwar/dice-game')">Github</button>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://lalitshankhwar.github.io/dice-game/')">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kunjilal sweets clone -->
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <img src="assets/image/project-3.PNG" class="img-fluid h-100" alt="Kunjilal Sweets">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="project-text text-lg-start text-center">
+                            <h4 class="text-white">Kunjilal Sweets Clone</h4>
+                            <p class="text-white-50">HTML, CSS & Javascript</p>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://github.com/lalitshankhwar/kunjilal-sweets-clone')">Github</button>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open(' https://lalitshankhwar.github.io/kunjilal-sweets-clone/')">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Disney+ hotstar clone-->
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <img src="assets/image/project-2.PNG" class="img-fluid h-100" alt="Disney+ Hotstar">
+                    </div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="project-text text-lg-end text-center">
+                            <h4 class="text-white">Disney + Hotstar Clone</h4>
+                            <p class="text-white-50">HTML, CSS & Javascript</p>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://github.com/lalitshankhwar/disneyPlus-hotstar-clone')">Github</button>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://lalitshankhwar.github.io/disneyPlus-hotstar-clone/')">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Amazon clone -->
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <img src="assets/image/project-1.PNG" class="img-fluid h-100" alt="Amazon">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="project-text text-lg-start text-center">
+                            <h4 class="text-white">Amazon Clone</h4>
+                            <p class="text-white-50">HTML, CSS & Javascript</p>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open('https://github.com/lalitshankhwar/amazon-clone')">Github</button>
+                            <button class="btn rounded-5 text-uppercase" onclick="window.open(' https://lalitshankhwar.github.io/amazon-clone/')">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section  -->
+    <section class="contact-section bg-black" id="contact">
+        <div class="container">
+            <div class="mx-auto text-center mb-2">
+                <i class="fa-solid fa-paper-plane text-white fa-2x mb-2"></i>
+                <h2 class="text-white">Connect With Me!</h2>
+                <br>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-md-4 my-3">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="text-center">
+                                <span class="text-uppercase d-inline-block pb-3">Email</span>
+                            </div>
+                            <div class="small my-4">
+                                <a href="mailto:shankhwarlalit0@gmail.com">Shankhwarlalit0@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-user-group"></i>
+                            <div class="text-center">
+                                <span class="text-uppercase d-inline-block pb-3">Socials</span>
+                            </div>
+                            <div class="social my-4">
+                                <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/lalitshankhwar"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a target="_blank" title="GitHub" href="https://github.com/lalitshankhwar"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a target="_blank" title="WhatsApp" href="https://wa.me/+919368186976/"><i
+                                        class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <div class="text-center">
+                                <span class="text-uppercase d-inline-block pb-3">Phone</span>
+                            </div>
+                            <div class="my-4 small">
+                                <a href="tel:+919368186976">+91-9368186976</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer  -->
+    <footer class="bg-black text-white-50 text-center small pb-3">
+        <div class="container">
+            &#169; 2023 Lalit Kumar. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

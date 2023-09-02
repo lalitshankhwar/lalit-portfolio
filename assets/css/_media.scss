@@ -1,0 +1,112 @@
+@media (max-width:991px) {
+    header{
+        background-color: #fff;
+        .navigation{
+            a{
+                color: $header-link-color;
+            }
+            #logo{
+                color: black!important;
+            }
+            .menu{
+                ul{
+                    transition: all 0.5s ease-in-out;
+                    background-color: #fff!important;
+                    position: absolute;
+                    top: 65px;
+                    z-index: -1;
+                    height: 0;
+                    overflow: hidden;
+                    left: 0;
+                    width: 100%;
+                    flex-direction: column;
+                    // padding: 1rem 0;
+                    li{
+                        padding:0.8rem 0 ;
+                    }
+                }
+            }
+            .menu-btn{
+                display: block;
+            }
+        }
+    }
+    .introduction{
+        .circular-image{
+            margin-top: 15rem;
+        }
+        .title{
+            .name{
+                font-size: 4rem;
+            }
+            .skill{
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+        }
+    }
+    .work-section{
+        .work{
+            .company, .job-role, .time-period{
+                text-align: center;
+            }
+        }
+    }
+    .project-section{
+        .project-text{
+            padding: 3rem!important;
+        }
+    }
+}
+
+@media (max-width:767px){
+    .introduction{
+        .title{
+            .name{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 591px){
+    .work-section{
+        .work{
+            padding: 5rem 3rem!important;
+        }
+    }
+    .project-section{
+        .project-text{
+            padding: 1.5rem!important;
+        }
+    }
+}
+
+@media (max-width: 360px){
+    .work-section{
+        .work{
+            padding: 5rem 2rem!important;  
+            .work-heading{
+                h2{
+                    text-align: center;
+                    padding-left: 0!important;
+                    border-left: none!important;
+                }
+                p{
+                    text-align: center
+                }
+            }          
+        }
+    }
+    .project-section{
+        .project-text{
+            h4{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 0.88rem;
+            }
+            
+        }
+    }
+}

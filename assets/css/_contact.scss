@@ -1,0 +1,25 @@
+.contact-section{
+    padding: 7.5rem 0 4rem;
+    .card{
+        border-bottom: 0.25rem solid $primary-color;
+        .card-body{
+            @include links($primary-color, $primary-hover);
+            i{
+                color: $primary-color;
+            }
+            span{
+                font-family: $secondary-font;
+                font-size: 0.8rem;
+                letter-spacing: 0.15rem;
+                border-bottom: .25rem solid $primary-color;
+            }
+            .social{
+                a i{
+                    margin: 0 .5rem;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+}

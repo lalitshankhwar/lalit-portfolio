@@ -1,0 +1,48 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    .navigation{
+        @include links(#fff, gainsboro);
+        a{
+            font-weight: 500;
+            font-size: 20px;
+            &:hover{
+                border-bottom:2px solid $primary-color;
+                color:$primary-color;
+            }
+        }
+        .menu ul{
+            li {
+                padding: 1.8rem 1.5rem;
+                
+            }
+        }
+        .menu.open{
+            ul{
+                height: 17.5rem;
+            }
+        }
+        .menu-btn{
+            display: none;
+            background-color: transparent;
+            font-size: 0.8rem;
+            border: 1px solid $primary-color;
+        }
+    }
+}
+header.fadebg{
+    #logo{
+        color: black!important;
+    }
+    a{
+        color: black;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    background-color: #fff;
+}

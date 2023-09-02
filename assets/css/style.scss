@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin links($color1, $color2) {
+    a {
+        text-decoration: none;
+        color: $color1;
+        &:hover {
+            color: $color2;
+        }
+    }
+}
+
+@mixin section-heading {
+    letter-spacing: 1px;
+    @include links($primary-color, $primary-hover);
+
+    h2 {
+        padding-left: 2rem;
+        border-left: 8px solid $primary-color;
+    }
+}
+
+@import "./variables";
+@import "./header";
+@import "./about";
+@import "./skill";
+@import "./media";
+@import "./work-experience";
+@import "./project";
+@import "./contact";
+
+body {
+    font-family: $primary-font;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.bg-grey {
+    background: linear-gradient(to bottom, rgba(22, 22, 22, .1) 0, rgba(22, 22, 22, .5) 75%, #161616 100%), url(../image/bg-masthead.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+}
